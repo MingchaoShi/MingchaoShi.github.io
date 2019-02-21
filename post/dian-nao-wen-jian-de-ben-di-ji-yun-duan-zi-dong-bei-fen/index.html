@@ -5,7 +5,7 @@
     
 <meta charset="utf-8" >
 
-<title>Hello Hve Notes | ichaochao&#39;s Blog</title>
+<title>电脑文件的本地及云端自动备份 | ichaochao&#39;s Blog</title>
 <meta name="description" content="用进废退">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -76,44 +76,28 @@
 
       <div class="content-container">
         <div class="post-detail">
-          <h2 class="post-title">Hello Hve Notes</h2>
+          <h2 class="post-title">电脑文件的本地及云端自动备份</h2>
           <div class="post-info post-detail-info">
-            <span><i class="icon-calendar-outline"></i> 2018-12-11</span>
-            
-              <span>
-                <i class="icon-pricetags-outline"></i>
-                
-                  <a href="https://MingchaoShi.github.io/tag/hvenotes">
-                    HveNotes
-                    
-                  </a>
-                
-              </span>
+            <span><i class="icon-calendar-outline"></i> 2019-02-21</span>
             
           </div>
           <div class="post-content">
-            <p>👏  欢迎使用 <strong>Hve Notes</strong> ！  </p>
-<p>Github: <a href="https://github.com/hve-notes/hve-notes">Hve Notes</a><br>项目主页: <a href="http://hvenotes.fehey.com/">Hve Notes</a><br>示例网站: <a href="http://fehey.com/">示例网站一</a> <a href="http://hve-notes.github.io">示例网站二</a>  </p>
-<p>✍️  <strong>Hve Notes</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ... </p>
-<h2 id="-">特性👇</h2>
-<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作  </p>
-<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片  </p>
-<p>🏷️  你可以对文章进行标签分组  </p>
-<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单  </p>
-<p>💻  你可以在 <strong>𝖶𝗂𝗇𝖽𝗈𝗐𝗌</strong> 或 <strong>𝖬𝖺𝖼𝖮𝖲</strong> 设备上使用此客户端  </p>
-<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台  </p>
-<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统  </p>
-<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong>  </p>
-<p>🌁  你可以任意使用应用内默认主题或任意第三方主题  </p>
-<p>🌱 当然 <strong>Hve Notes</strong> 还很年轻，有很多不足，但请相信，它会不停向前🏃</p>
-<p>未来，它一定会成为你离不开的伙伴</p>
-<p>尽情发挥你的才华吧！</p>
-<p>😘 Enjoy~</p>
+            <p>这是我一直在用的自动备份方案，一经设置可自动实现指定目录的本地及云端备份，非常方便。</p>
+<p>通过下面的设置，PC将在指定的时间，将指定目录(A处)的内容自动同步到本地另一处(B处)，并且同步到云盘，实现无人值守的自动备份功能。<br>注1：以下环境为Windows7，网络云盘为坚果云。<br>注2：设需要备份的文件位于目录A，本地备份于目录B，目录B同时也是坚果云的同步目录。<br>注3：坚果云的同步应始终处于运行状态。</p>
+<p>下载安装本地同步工具SyncToy，这是微软出品的免费工具；（下载链接：<a href="https://www.microsoft.com/en-us/download/details.aspx?id=15155%EF%BC%89">https://www.microsoft.com/en-us/download/details.aspx?id=15155）</a><br>配置SyncToy：<br>Create New Folder Pair：在Left Folder里面输入目录A的地址，在Right Folder里面输入目录B的地址；<br>在接下来的页面，选择“Echo”;<br>在接下来的页面，设置此同步的名字，比如“Documents Backup”。<br>设置任务计划程序：附件→系统工具→任务计划程序新建一个任务计划，在指定的时间运行SyncToy程序，比如：&quot;C:\Program Files\SyncToy 2.1\SyncToyCmd.exe&quot;，并添加参数 -R。你可以自由设定备份时间和频率。<br>注册并下载安装坚果云，将目录B设置为坚果云的同步目录。</p>
 
           </div>
         </div>
 
         
+          <div class="next-post">
+            <a class="purple-link" href="https://MingchaoShi.github.io/post/blog-rebirth">
+              <h3 class="post-title">
+                下一篇：Blog rebirth
+              </h3>
+            </a>
+          </div>
+          
       </div>
 
       
