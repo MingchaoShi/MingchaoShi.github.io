@@ -1,117 +1,129 @@
-
 <!DOCTYPE html>
 <html>
   <head>
-    
-<meta charset="utf-8" >
+    <meta charset="utf-8" >
 
 <title>读书笔记 - 投资中最简单的事 | ichaochao&#39;s Blog</title>
 <meta name="description" content="用进废退">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+<link rel="shortcut icon" href="https://MingchaoShi.github.io/favicon.ico?v=1556184724106">
 
-<link rel="shortcut icon" href="https://MingchaoShi.github.io/favicon.ico">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
 <link rel="stylesheet" href="https://MingchaoShi.github.io/styles/main.css">
 
 
-
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
   </head>
   <body>
-    <div id="app" class="main">
-      <div class="site-header-container">
-  <div class="site-header">
-    <div class="left">
-      <a href="https://MingchaoShi.github.io">
-        <img class="avatar" src="https://MingchaoShi.github.io/images/avatar.png" alt="" width="32px" height="32px">
-      </a>
-      <a href="https://MingchaoShi.github.io">
-        <h1 class="site-title">ichaochao&#39;s Blog</h1>
-      </a>
-    </div>
-    <div class="right">
-      <transition name="fade">
-        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
-      </transition>
+  
+    <nav class="navbar border fixed split-nav">
+  <div class="nav-brand">
+    <h3><a href="https://MingchaoShi.github.io">ichaochao&#39;s Blog</a></h3>
+  </div>
+  <div class="collapsible">
+    <input id="collapsible1" type="checkbox" name="collapsible1">
+    <button>
+      <label for="collapsible1">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </label>
+    </button>
+    <div class="collapsible-body">
+      <ul class="inline">
+        
+          <li>
+            
+              <a href="/" class="menu">
+                首页
+              </a>
+            
+          </li>
+        
+          <li>
+            
+              <a href="/archives" class="menu">
+                归档
+              </a>
+            
+          </li>
+        
+          <li>
+            
+              <a href="/tags" class="menu">
+                标签
+              </a>
+            
+          </li>
+        
+          <li>
+            
+              <a href="/post/about" class="menu">
+                关于
+              </a>
+            
+          </li>
+        
+      </ul>
     </div>
   </div>
-</div>
+</nav>
 
-<transition name="fade">
-  <div class="menu-container" style="display: none;" v-show="menuVisible">
-    <div class="menu-list">
-      
-        
-          <a href="/" class="menu purple-link">
-            首页
-          </a>
-        
-      
-        
-          <a href="/archives" class="menu purple-link">
-            归档
-          </a>
-        
-      
-        
-          <a href="/tags" class="menu purple-link">
-            标签
-          </a>
-        
-      
-        
-          <a href="/post/about" class="menu purple-link">
-            关于
-          </a>
-        
-      
-    </div>
-  </div>
-</transition>
-
-
-      <div class="content-container">
-        <div class="post-detail">
-          <h2 class="post-title">读书笔记 - 投资中最简单的事</h2>
-          <div class="post-info post-detail-info">
-            <span><i class="icon-calendar-outline"></i> 2019-04-04</span>
+    <div id="top" class="row site">
+      <div class="sm-12 md-8 col">
+        <div class="paper">
+          <article class="article">
+            <h1>读书笔记 - 投资中最简单的事</h1>
+            <p class="article-meta">
+              2019-04-04
+              
+                <a href="https://MingchaoShi.github.io/tag/ReadingNotes" class="badge warning">
+                  ReadingNotes
+                </a>
+              
+            </p>
             
-              <span>
-                <i class="icon-pricetags-outline"></i>
-                
-                  <a href="https://MingchaoShi.github.io/tag/ReadingNotes">
-                    ReadingNotes
-                    
-                  </a>
-                
-              </span>
+              <img src="https://MingchaoShi.github.io/post-images/Readingnotes_simplyinvest.jpeg" alt="读书笔记 - 投资中最简单的事">
             
-          </div>
-          <div class="post-content">
-            <p><strong><em>好公司的两个标准</em></strong><br> 一是它做的事情别人做不了；二是它做的事情自己可以重复做。前者是门槛，决定利润率的高低和趋势；后者是成长的可复制性，决定销售增速。如果二者不可兼得，宁要有门槛的低增长（可持续），也不要没门槛的高增长（不可持续）。门槛是现有的，好把握；成长是将来的，难预测。</p>
-<p><strong><em>寡头的力量</em></strong><br> 回顾过去5年，寡头垄断行业的利润增长往往不断超出预期，而市场集中度低的行业则常常陷于恶性竞争和价格战的泥潭之中。白色家电（空调、冰箱和洗衣机）和黑色家电（电视）两个行业的不同发展历程就是最好的明证。所以，投资制造业时更应关注工程机械、核心汽配、白色家电这样的寡头行业。分析技术变化快的行业时不必看市场占有率，而要看是否适应最新的杀手级应用的潮流。</p>
-<p><strong><em>逆向投资</em></strong>是最简单也最不容易学习的投资方式，因为它不是一种技能，而是一种品格——品格是无法学习的，只能通过实践慢慢磨炼出来。</p>
-<p><strong><em>一只下跌的股票是否值得逆向投资</em></strong>的关键在于以下三点：<br>首先，看估值是否够低、是否已经过度反映了可能的坏消息。<br>其次，看遭遇的问题是否是短期问题、是否是可解决的问题。<br>最后，看股价暴跌本身是否会导致公司的基本面进一步恶化，即是否有索罗斯所说的反身性。</p>
+            <div class="post-content">
+              <p><em><strong>好公司的两个标准</strong></em>
+一是它做的事情别人做不了；二是它做的事情自己可以重复做。前者是门槛，决定利润率的高低和趋势；后者是成长的可复制性，决定销售增速。如果二者不可兼得，宁要有门槛的低增长（可持续），也不要没门槛的高增长（不可持续）。门槛是现有的，好把握；成长是将来的，难预测。</p>
+<p><em><strong>寡头的力量</strong></em>
+回顾过去5年，寡头垄断行业的利润增长往往不断超出预期，而市场集中度低的行业则常常陷于恶性竞争和价格战的泥潭之中。白色家电（空调、冰箱和洗衣机）和黑色家电（电视）两个行业的不同发展历程就是最好的明证。所以，投资制造业时更应关注工程机械、核心汽配、白色家电这样的寡头行业。分析技术变化快的行业时不必看市场占有率，而要看是否适应最新的杀手级应用的潮流。</p>
+<p>***逆向投资***是最简单也最不容易学习的投资方式，因为它不是一种技能，而是一种品格——品格是无法学习的，只能通过实践慢慢磨炼出来。</p>
+<p>***一只下跌的股票是否值得逆向投资***的关键在于以下三点：
+首先，看估值是否够低、是否已经过度反映了可能的坏消息。
+其次，看遭遇的问题是否是短期问题、是否是可解决的问题。
+最后，看股价暴跌本身是否会导致公司的基本面进一步恶化，即是否有索罗斯所说的反身性。</p>
 <p>有些股票，你有持仓，但是下跌时你心里一点也不慌，甚至希望它多跌一点好让你加仓，这说明你对该股票已有足够了解，对其内在价值和未来前景有比市场更为精准的把握，因此市场价格的波动已经不会影响到你的情绪了。对这些股票而言，下跌只是提供一个更好的买点罢了——买之后的淡定，源自买之前的分析。</p>
-<p><strong><em>不是每个行业都适合做逆向投资</em></strong>：有色煤炭之类的最好是跟着趋势走，钢铁这类夕阳行业有可能是价值陷阱，计算机、通讯、电子等技术变化快的行业同样不适合越跌越买。相较而言，食品饮料是个适合逆向投资的领域。</p>
-<p>让我们仔细想想，<strong><em>做投资最重要的是什么呢</em></strong>？投资中影响股价涨跌的因素是无穷无尽的，但是最重要的其实只有两点，一个是估值，一个是流动性。估值就是价格相对于价值是便宜了还是贵了，估值决定了股票能够上涨的空间，流动性则决定了股市涨跌的时间。</p>
-<p><strong><em>通胀环境下买什么股票好？</em></strong> 常见的答案是资产资源类股票，因为投资者可以直接受益于价格上涨。更好的答案也许是那些有定价权的公司：通胀时他们可以提价，把成本压力转嫁给下游；通胀回落时，他们不必降价就享受更高的利润率。这些公司包括食品饮料等品牌消费品和工程机械、核心汽配、白色家电等寡头垄断的高端制造业。</p>
+<p><em><strong>不是每个行业都适合做逆向投资</strong></em>：有色煤炭之类的最好是跟着趋势走，钢铁这类夕阳行业有可能是价值陷阱，计算机、通讯、电子等技术变化快的行业同样不适合越跌越买。相较而言，食品饮料是个适合逆向投资的领域。</p>
+<p>让我们仔细想想，<em><strong>做投资最重要的是什么呢</strong></em>？投资中影响股价涨跌的因素是无穷无尽的，但是最重要的其实只有两点，一个是估值，一个是流动性。估值就是价格相对于价值是便宜了还是贵了，估值决定了股票能够上涨的空间，流动性则决定了股市涨跌的时间。</p>
+<p><em><strong>通胀环境下买什么股票好？</strong></em> 常见的答案是资产资源类股票，因为投资者可以直接受益于价格上涨。更好的答案也许是那些有定价权的公司：通胀时他们可以提价，把成本压力转嫁给下游；通胀回落时，他们不必降价就享受更高的利润率。这些公司包括食品饮料等品牌消费品和工程机械、核心汽配、白色家电等寡头垄断的高端制造业。</p>
 <p>做投资真正想赚到比别人更多的收益，就要保持一个判断的独立性。别人悲观的时候也不一定就乐观，但是要想想别人的悲观有没有理由，别人的悲观是不是已经反映在股价中，</p>
-<p><strong><em>西方文化重规律，中国文化重个例。</em></strong> 中国的股市之所以赌性特强，原因之一就是尽管投机炒作平均而言是个多数人亏钱的游戏（规律），但是少数一夜暴富的故事（个例）还是吸引着许多心存侥幸的投机客前赴后继地屡败屡战。</p>
-<p>伯乐在教人相马时，对他喜欢的人他就教如何相普通的好马，对他厌恶的人他就教如何相千里马。为什么呢？普通马常有，如何相马有规律，容易学。千里马不常有，是不拘一格的个例，难学，且常常无用武之地。传说中的“十倍股”成长股就像千里马一样可遇而不可求，还是脚踏实地找些价值股普通好马靠谱些。<br>成长股中有大牛股是个例，价值股平均跑赢成长股是规律。不被精彩绝伦的牛股倾倒，不被纷繁复杂的个例迷惑，不抱侥幸心理，不赌小概率事件，坚持按规律投资，这是投资纪律的一种体现，也是投资成功的必要条件。</p>
+<p><em><strong>西方文化重规律，中国文化重个例。</strong></em> 中国的股市之所以赌性特强，原因之一就是尽管投机炒作平均而言是个多数人亏钱的游戏（规律），但是少数一夜暴富的故事（个例）还是吸引着许多心存侥幸的投机客前赴后继地屡败屡战。</p>
+<p>伯乐在教人相马时，对他喜欢的人他就教如何相普通的好马，对他厌恶的人他就教如何相千里马。为什么呢？普通马常有，如何相马有规律，容易学。千里马不常有，是不拘一格的个例，难学，且常常无用武之地。传说中的“十倍股”成长股就像千里马一样可遇而不可求，还是脚踏实地找些价值股普通好马靠谱些。
+成长股中有大牛股是个例，价值股平均跑赢成长股是规律。不被精彩绝伦的牛股倾倒，不被纷繁复杂的个例迷惑，不抱侥幸心理，不赌小概率事件，坚持按规律投资，这是投资纪律的一种体现，也是投资成功的必要条件。</p>
 <p>我认为彼得·林奇说得对，他说当有人告诉你“A公司是下一个B公司”的时候，第一要把A卖掉，第二要把B也卖掉。因为第一，A永远不会成为B；第二，B已经被当作成功的代名词，说明它的优点可能已经体现在现在的股价中了。</p>
-<p><strong><em>关于估值的几句话</em></strong><br>便宜是硬道理。<br>买便宜货不一定赚钱，但赚钱的概率较大。<br>买便宜货往往先被套，最终赚钱。<br>即使如医药、科技、媒体、通信之类的成长行业，估值也是重要考量因素。<br>有些行业，如何界定“便宜”并非易事，低市盈率、低市净率不一定是便宜。</p>
+<p><em><strong>关于估值的几句话</strong></em>
+便宜是硬道理。
+买便宜货不一定赚钱，但赚钱的概率较大。
+买便宜货往往先被套，最终赚钱。
+即使如医药、科技、媒体、通信之类的成长行业，估值也是重要考量因素。
+有些行业，如何界定“便宜”并非易事，低市盈率、低市净率不一定是便宜。</p>
 <p>当然，对中小企业来说，管理层的重要性不容忽视。中国有很多小企业，看起来像是伟大的企业，但是发展到一定程度就发展不下去了，因为它受限于董事长、大股东个人的素质和境界。很多中国的上市企业在成长到100亿、150亿以后上不去，是因为管理层没有足够的眼光和胸襟。公司在不同的阶段，它的品质的看点是不一样的。小公司当然是骑师更重要，大公司就是机制和文化更重要。</p>
 <p>对于品质的判断，我的办法比较简单。我更重视行业分析，而不是个股分析。我认为选一个好行业是成功投资的基本条件。</p>
-<p><strong><em>公司的品质好坏，关键是看能不能具有定价权。</em></strong></p>
+<p><em><strong>公司的品质好坏，关键是看能不能具有定价权。</strong></em></p>
 <p>政府今天扶持这个明天打压那个，但有些行业越打压越赚钱，有些行业越扶持越亏钱。不是因为政府的力度不够，而是因为有些经济规律是不以人的意志为转移的。扶持其实是鼓励更多的人进入行业而加剧了竞争，打压却限制了新增供给，反而改善了竞争格局并且让行业龙头做大。</p>
 <p>俗话说男怕入错行，我们个人在做事业选择时，很重要的一点就是要找到有先发优势的行业。我认为做一个证券分析师就很有先发优势。做10年之后，和新进来的人相比，你的市场影响力、在行业内的人脉、对行业的理解是完全不一样的，这是个好行业。像外国的券商研究所里有60多岁了还在做分析师的人，也做得很快乐。但是，做程序员就不一定是一个好行业，可能3年就需要学一种新的计算机语言，除非你转型做产品经理。中国的很多行业就是这样，总是有后浪不断去推前浪，最后把前浪拍死在沙滩上。这样的行业就很难受。</p>
 <p>总结一下，判断一个公司所在的行业好不好，首先是看行业竞争格局是不是清晰，领先者有没有品牌的美誉度，领先者产品的售价是不是显著高于其他竞争者，领先者有没有网络服务的优势，有没有规模效应，产品的销售半径是不是相对比较小（不用参与全球竞争），是不是有回头客，是不是低单价（下游对价格不敏感），是不是转换成本高，领先者是不是有先发优势，技术变化是不是没有那么快。对品质的评判有很多指标，核心是“这是不是一门好生意，有没有定价权，是不是一门容易赚钱的生意”。</p>
-<p><strong><em>在别人恐惧时贪婪，在别人贪婪时恐惧。</em></strong></p>
+<p><em><strong>在别人恐惧时贪婪，在别人贪婪时恐惧。</strong></em></p>
 <ol>
 <li>这话很有道理。</li>
 <li>这话说了等于没说。</li>
@@ -122,49 +134,141 @@
 <li>恐惧和贪婪在市场中的直接体现就是估值。恐惧时，估值水平低；贪婪时，估值水平高。</li>
 <li>所以，在估值低时贪婪，在估值高时恐惧。</li>
 </ol>
-<p>迈克尔·波特（Michael Porter）在《国家竞争优势》（The Competitive Advantage of Nations）中把国家竞争力发展分为四个阶段：<br>1.生产要素导向阶段（依靠资源或廉价劳力）；<br>2.投资导向阶段（大规模产能扩张，政府起主导作用）；<br>3.创新导向阶段（政府应无为而治）；<br>4.财富导向阶段（社会已富足，强调公平而非效率，社会价值挂帅，实用主义减弱）。</p>
+<p>迈克尔·波特（Michael Porter）在《国家竞争优势》（The Competitive Advantage of Nations）中把国家竞争力发展分为四个阶段：
+1.生产要素导向阶段（依靠资源或廉价劳力）；
+2.投资导向阶段（大规模产能扩张，政府起主导作用）；
+3.创新导向阶段（政府应无为而治）；
+4.财富导向阶段（社会已富足，强调公平而非效率，社会价值挂帅，实用主义减弱）。</p>
 <p>对大多数发展中国家而言，阶段2与阶段3之间有着极高的门槛——第二次世界大战后的半个世纪，实现成功跨越的国家只有日本和韩国。</p>
-<p><strong><em>人性的弱点：投资者常见的心理误区</em></strong></p>
-<p>1.家花不如野花香<br>我在研究世界各国股市的历史后发现，几乎每个国家（包括A股）低估值的价值股的长期投资回报率都显著优于高估值的成长股。原因很简单：投资者对未来的成长往往抱有不切实际的过高期望，而对于现有的价值却视而不见。不珍惜已拥有的，而对未到手的抱有过于美好的想象，是放之四海皆准的普遍人性。</p>
-<p>3.仓位思维<br>一旦买成了重仓股，对利好消息就照单全收，对利空消息就不以为然，心理学上叫确认偏误，民间说法叫屁股决定脑袋。正确的决策流程是先有论据，再有结论；但多数人是先有结论，再找论据，这样一来对反面的证据自然就视而不见。有了仓位，思维就不客观，故称仓位思维。</p>
-<p>4.锚固偏见<br>常有人说，这股票涨这么多了，还不抛？或者，已经跌一半了，还不买？这就是锚固偏见的表现，其潜意识是把原有股价当成合理、有参照性的锚点。其实，一个股票便宜与否，看估值比看近期涨跌更可靠：基本面大幅超预期时会越涨越便宜，反之会越跌越贵。锚固偏见是奢侈品的常用营销手段。先设计一批2万美元的包包让模特们背着走来走去，让你感觉这个品牌的包就值2万美元一个。这样一来，当你在店里看到1 000美元的同一品牌包时，就不觉得贵了。其实2万美元的包也卖不了几个，利润主要来自卖1 000美元的包。</p>
-<p>8.榔头症<br>美国消费股多，适合价值投资；加拿大资源股多，适合趋势投资。互联网赢家通吃，买龙头；休闲服装百花齐放，买成长。差异化产品，买品牌；同质化产品，买成本低的。不同国家、不同行业，适用方法应不同，但人们常生搬硬套同种模式。在一个榔头看来，世界上的所有东西都是钉子。</p>
-<p>9.选择性记忆<br>大多数人对持有的牛股都津津乐道（就像我老爱提起去年抄底工程机械的经历），对踩过的地雷却避而不谈（既然罄竹难书，干脆我就不书了）。对自己的正确决策印象深刻，对自己的错误却记忆模糊，选择性记忆是人脑自我保护的方式之一，也是提高投资水平的障碍。俾斯麦说，每个笨蛋都会从自己的教训中吸取经验，聪明人则会从别人的经验中获益。可惜股市中能从自己的教训里吸取经验的人也不多见（笨蛋也不好当啊）。你记得你去年亏损最大的是哪5只股票吗？你吸取了什么教训呢？没关系，我也不记得我的了——这就是选择性记忆。</p>
-<p>11.羊群效应<br>羊群效应原是由生物学家在研究动物时发现的。现实生活中，基金经理抱团取暖，散户跟风炒作，非典时抢醋，地震后抢盐，羊群效应无处不在。不管是集体看空还是集体看多，最一致的时候往往是最危险的时候。只有卓尔不群的人才能在高处有如临深渊的谨慎，在低谷有仰望星空的勇气。</p>
+<p><em><strong>人性的弱点：投资者常见的心理误区</strong></em></p>
+<p>1.家花不如野花香
+我在研究世界各国股市的历史后发现，几乎每个国家（包括A股）低估值的价值股的长期投资回报率都显著优于高估值的成长股。原因很简单：投资者对未来的成长往往抱有不切实际的过高期望，而对于现有的价值却视而不见。不珍惜已拥有的，而对未到手的抱有过于美好的想象，是放之四海皆准的普遍人性。</p>
+<p>3.仓位思维
+一旦买成了重仓股，对利好消息就照单全收，对利空消息就不以为然，心理学上叫确认偏误，民间说法叫屁股决定脑袋。正确的决策流程是先有论据，再有结论；但多数人是先有结论，再找论据，这样一来对反面的证据自然就视而不见。有了仓位，思维就不客观，故称仓位思维。</p>
+<p>4.锚固偏见
+常有人说，这股票涨这么多了，还不抛？或者，已经跌一半了，还不买？这就是锚固偏见的表现，其潜意识是把原有股价当成合理、有参照性的锚点。其实，一个股票便宜与否，看估值比看近期涨跌更可靠：基本面大幅超预期时会越涨越便宜，反之会越跌越贵。锚固偏见是奢侈品的常用营销手段。先设计一批2万美元的包包让模特们背着走来走去，让你感觉这个品牌的包就值2万美元一个。这样一来，当你在店里看到1 000美元的同一品牌包时，就不觉得贵了。其实2万美元的包也卖不了几个，利润主要来自卖1 000美元的包。</p>
+<p>8.榔头症
+美国消费股多，适合价值投资；加拿大资源股多，适合趋势投资。互联网赢家通吃，买龙头；休闲服装百花齐放，买成长。差异化产品，买品牌；同质化产品，买成本低的。不同国家、不同行业，适用方法应不同，但人们常生搬硬套同种模式。在一个榔头看来，世界上的所有东西都是钉子。</p>
+<p>9.选择性记忆
+大多数人对持有的牛股都津津乐道（就像我老爱提起去年抄底工程机械的经历），对踩过的地雷却避而不谈（既然罄竹难书，干脆我就不书了）。对自己的正确决策印象深刻，对自己的错误却记忆模糊，选择性记忆是人脑自我保护的方式之一，也是提高投资水平的障碍。俾斯麦说，每个笨蛋都会从自己的教训中吸取经验，聪明人则会从别人的经验中获益。可惜股市中能从自己的教训里吸取经验的人也不多见（笨蛋也不好当啊）。你记得你去年亏损最大的是哪5只股票吗？你吸取了什么教训呢？没关系，我也不记得我的了——这就是选择性记忆。</p>
+<p>11.羊群效应
+羊群效应原是由生物学家在研究动物时发现的。现实生活中，基金经理抱团取暖，散户跟风炒作，非典时抢醋，地震后抢盐，羊群效应无处不在。不管是集体看空还是集体看多，最一致的时候往往是最危险的时候。只有卓尔不群的人才能在高处有如临深渊的谨慎，在低谷有仰望星空的勇气。</p>
 
-          </div>
+            </div>
+          </article>
         </div>
-
-        
-          <div class="next-post">
-            <a class="purple-link" href="https://MingchaoShi.github.io/post/Auto_Backup">
-              <h3 class="post-title">
-                下一篇：电脑文件的本地及云端自动备份
-              </h3>
-            </a>
-          </div>
+        <div class="paper" data-aos="fade-in">
           
+            <div class="next-post">
+              <div class="next">
+                下一篇
+              </div>
+              <a href="https://MingchaoShi.github.io/post/Auto_Backup">
+                <h3 class="post-title">
+                  电脑文件的本地及云端自动备份
+                </h3>
+              </a>
+            </div>
+          
+        </div>
+        
       </div>
 
+      <div class="sm-12 md-4 col sidebar">
+  <div class="paper info-container">
+    <img src="https://MingchaoShi.github.io/images/avatar.png?v=1556184724106" class="no-responsive avatar">
+    <div class="text-muted">用进废退</div>
+    <div class="social-container">
       
-
-      <div class="site-footer">
-  <div class="slogan">用进废退</div>
-  Powered by Hve Notes
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+  </div>
+  <div class="paper">
+    <div class="sidebar-title">
+      最新文章
+    </div>
+    <div class="row">
+      <ul>
+        
+          
+            <li>
+              <a href="https://MingchaoShi.github.io/post/Readingnotes_How-to-think-straight-about-psychology">读书笔记 - 这才是心理学</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://MingchaoShi.github.io/post/Readingnotes_simplyinvest">读书笔记 - 投资中最简单的事</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://MingchaoShi.github.io/post/Auto_Backup">电脑文件的本地及云端自动备份</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://MingchaoShi.github.io/post/blog-rebirth">Blog rebirth</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://MingchaoShi.github.io/post/about">关于</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://MingchaoShi.github.io/post/hello-hve-notes">Hello Hve Notes</a>
+            </li>
+          
+        
+      </ul>
+    </div>
+  </div>
+  <div class="paper">
+    <div class="sidebar-title">
+      标签列表
+    </div>
+    <div class="row">
+      
+        <a href="https://MingchaoShi.github.io/tag/ReadingNotes" class="badge ">
+          ReadingNotes
+        </a>
+      
+        <a href="https://MingchaoShi.github.io/tag/hvenotes" class="badge warning">
+          HveNotes
+        </a>
+      
+    </div>
+  </div>
+  <div class="paper">
+    Powered by Hve Notes
+  </div>
 </div>
 
 
     </div>
-    <script type="application/javascript">
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
 
 hljs.initHighlightingOnLoad()
-
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
 
 </script>
 

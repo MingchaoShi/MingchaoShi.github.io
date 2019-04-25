@@ -1,124 +1,222 @@
-
 <!DOCTYPE html>
 <html>
   <head>
-    
-<meta charset="utf-8" >
+    <meta charset="utf-8" >
 
 <title>电脑文件的本地及云端自动备份 | ichaochao&#39;s Blog</title>
 <meta name="description" content="用进废退">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+<link rel="shortcut icon" href="https://MingchaoShi.github.io/favicon.ico?v=1556184724106">
 
-<link rel="shortcut icon" href="https://MingchaoShi.github.io/favicon.ico">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
 <link rel="stylesheet" href="https://MingchaoShi.github.io/styles/main.css">
 
 
-
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
   </head>
   <body>
-    <div id="app" class="main">
-      <div class="site-header-container">
-  <div class="site-header">
-    <div class="left">
-      <a href="https://MingchaoShi.github.io">
-        <img class="avatar" src="https://MingchaoShi.github.io/images/avatar.png" alt="" width="32px" height="32px">
-      </a>
-      <a href="https://MingchaoShi.github.io">
-        <h1 class="site-title">ichaochao&#39;s Blog</h1>
-      </a>
-    </div>
-    <div class="right">
-      <transition name="fade">
-        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
-      </transition>
-    </div>
+  
+    <nav class="navbar border fixed split-nav">
+  <div class="nav-brand">
+    <h3><a href="https://MingchaoShi.github.io">ichaochao&#39;s Blog</a></h3>
   </div>
-</div>
-
-<transition name="fade">
-  <div class="menu-container" style="display: none;" v-show="menuVisible">
-    <div class="menu-list">
-      
+  <div class="collapsible">
+    <input id="collapsible1" type="checkbox" name="collapsible1">
+    <button>
+      <label for="collapsible1">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </label>
+    </button>
+    <div class="collapsible-body">
+      <ul class="inline">
         
-          <a href="/" class="menu purple-link">
-            首页
-          </a>
-        
-      
-        
-          <a href="/archives" class="menu purple-link">
-            归档
-          </a>
-        
-      
-        
-          <a href="/tags" class="menu purple-link">
-            标签
-          </a>
-        
-      
-        
-          <a href="/post/about" class="menu purple-link">
-            关于
-          </a>
-        
-      
-    </div>
-  </div>
-</transition>
-
-
-      <div class="content-container">
-        <div class="post-detail">
-          <h2 class="post-title">电脑文件的本地及云端自动备份</h2>
-          <div class="post-info post-detail-info">
-            <span><i class="icon-calendar-outline"></i> 2019-02-21</span>
+          <li>
             
-          </div>
-          <div class="post-content">
-            <p>这是我一直在用的自动备份方案，一经设置可自动实现指定目录的本地及云端备份，非常方便。</p>
-<p>通过下面的设置，PC将在指定的时间，将指定目录(A处)的内容自动同步到本地另一处(B处)，并且同步到云盘，实现无人值守的自动备份功能。<br>注1：以下环境为Windows7，网络云盘为坚果云。<br>注2：设需要备份的文件位于目录A，本地备份于目录B，目录B同时也是坚果云的同步目录。<br>注3：坚果云的同步应始终处于运行状态。</p>
-<p>下载安装本地同步工具SyncToy，这是微软出品的免费工具；（下载链接：<a href="https://www.microsoft.com/en-us/download/details.aspx?id=15155%EF%BC%89">https://www.microsoft.com/en-us/download/details.aspx?id=15155）</a><br>配置SyncToy：<br>Create New Folder Pair：在Left Folder里面输入目录A的地址，在Right Folder里面输入目录B的地址；<br>在接下来的页面，选择“Echo”;<br>在接下来的页面，设置此同步的名字，比如“Documents Backup”。<br>设置任务计划程序：附件→系统工具→任务计划程序新建一个任务计划，在指定的时间运行SyncToy程序，比如：&quot;C:\Program Files\SyncToy 2.1\SyncToyCmd.exe&quot;，并添加参数 -R。你可以自由设定备份时间和频率。<br>注册并下载安装坚果云，将目录B设置为坚果云的同步目录。</p>
-
-          </div>
-        </div>
-
+              <a href="/" class="menu">
+                首页
+              </a>
+            
+          </li>
         
-          <div class="next-post">
-            <a class="purple-link" href="https://MingchaoShi.github.io/post/blog-rebirth">
-              <h3 class="post-title">
-                下一篇：Blog rebirth
-              </h3>
-            </a>
-          </div>
+          <li>
+            
+              <a href="/archives" class="menu">
+                归档
+              </a>
+            
+          </li>
+        
+          <li>
+            
+              <a href="/tags" class="menu">
+                标签
+              </a>
+            
+          </li>
+        
+          <li>
+            
+              <a href="/post/about" class="menu">
+                关于
+              </a>
+            
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div id="top" class="row site">
+      <div class="sm-12 md-8 col">
+        <div class="paper">
+          <article class="article">
+            <h1>电脑文件的本地及云端自动备份</h1>
+            <p class="article-meta">
+              2019-02-21
+              
+            </p>
+            
+              <img src="https://MingchaoShi.github.io/post-images/Auto_Backup.jpg" alt="电脑文件的本地及云端自动备份">
+            
+            <div class="post-content">
+              <p>这是我一直在用的自动备份方案，一经设置可自动实现指定目录的本地及云端备份，非常方便。</p>
+<p>通过下面的设置，PC将在指定的时间，将指定目录(A处)的内容自动同步到本地另一处(B处)，并且同步到云盘，实现无人值守的自动备份功能。
+注1：以下环境为Windows7，网络云盘为坚果云。
+注2：设需要备份的文件位于目录A，本地备份于目录B，目录B同时也是坚果云的同步目录。
+注3：坚果云的同步应始终处于运行状态。</p>
+<p>下载安装本地同步工具SyncToy，这是微软出品的免费工具；（下载链接：https://www.microsoft.com/en-us/download/details.aspx?id=15155）
+配置SyncToy：
+Create New Folder Pair：在Left Folder里面输入目录A的地址，在Right Folder里面输入目录B的地址；
+在接下来的页面，选择“Echo”;
+在接下来的页面，设置此同步的名字，比如“Documents Backup”。
+设置任务计划程序：附件→系统工具→任务计划程序新建一个任务计划，在指定的时间运行SyncToy程序，比如：&quot;C:\Program Files\SyncToy 2.1\SyncToyCmd.exe&quot;，并添加参数 -R。你可以自由设定备份时间和频率。
+注册并下载安装坚果云，将目录B设置为坚果云的同步目录。</p>
+
+            </div>
+          </article>
+        </div>
+        <div class="paper" data-aos="fade-in">
           
+            <div class="next-post">
+              <div class="next">
+                下一篇
+              </div>
+              <a href="https://MingchaoShi.github.io/post/blog-rebirth">
+                <h3 class="post-title">
+                  Blog rebirth
+                </h3>
+              </a>
+            </div>
+          
+        </div>
+        
       </div>
 
+      <div class="sm-12 md-4 col sidebar">
+  <div class="paper info-container">
+    <img src="https://MingchaoShi.github.io/images/avatar.png?v=1556184724106" class="no-responsive avatar">
+    <div class="text-muted">用进废退</div>
+    <div class="social-container">
       
-
-      <div class="site-footer">
-  <div class="slogan">用进废退</div>
-  Powered by Hve Notes
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+  </div>
+  <div class="paper">
+    <div class="sidebar-title">
+      最新文章
+    </div>
+    <div class="row">
+      <ul>
+        
+          
+            <li>
+              <a href="https://MingchaoShi.github.io/post/Readingnotes_How-to-think-straight-about-psychology">读书笔记 - 这才是心理学</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://MingchaoShi.github.io/post/Readingnotes_simplyinvest">读书笔记 - 投资中最简单的事</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://MingchaoShi.github.io/post/Auto_Backup">电脑文件的本地及云端自动备份</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://MingchaoShi.github.io/post/blog-rebirth">Blog rebirth</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://MingchaoShi.github.io/post/about">关于</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://MingchaoShi.github.io/post/hello-hve-notes">Hello Hve Notes</a>
+            </li>
+          
+        
+      </ul>
+    </div>
+  </div>
+  <div class="paper">
+    <div class="sidebar-title">
+      标签列表
+    </div>
+    <div class="row">
+      
+        <a href="https://MingchaoShi.github.io/tag/ReadingNotes" class="badge secondary">
+          ReadingNotes
+        </a>
+      
+        <a href="https://MingchaoShi.github.io/tag/hvenotes" class="badge secondary">
+          HveNotes
+        </a>
+      
+    </div>
+  </div>
+  <div class="paper">
+    Powered by Hve Notes
+  </div>
 </div>
 
 
     </div>
-    <script type="application/javascript">
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
 
 hljs.initHighlightingOnLoad()
-
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
 
 </script>
 

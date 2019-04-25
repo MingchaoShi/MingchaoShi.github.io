@@ -1,139 +1,222 @@
-
 <!DOCTYPE html>
 <html>
   <head>
-    
-<meta charset="utf-8" >
+    <meta charset="utf-8" >
 
 <title>Hello Hve Notes | ichaochao&#39;s Blog</title>
 <meta name="description" content="用进废退">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+<link rel="shortcut icon" href="https://MingchaoShi.github.io/favicon.ico?v=1556184724106">
 
-<link rel="shortcut icon" href="https://MingchaoShi.github.io/favicon.ico">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
 <link rel="stylesheet" href="https://MingchaoShi.github.io/styles/main.css">
 
 
-
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
   </head>
   <body>
-    <div id="app" class="main">
-      <div class="site-header-container">
-  <div class="site-header">
-    <div class="left">
-      <a href="https://MingchaoShi.github.io">
-        <img class="avatar" src="https://MingchaoShi.github.io/images/avatar.png" alt="" width="32px" height="32px">
-      </a>
-      <a href="https://MingchaoShi.github.io">
-        <h1 class="site-title">ichaochao&#39;s Blog</h1>
-      </a>
-    </div>
-    <div class="right">
-      <transition name="fade">
-        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
-      </transition>
+  
+    <nav class="navbar border fixed split-nav">
+  <div class="nav-brand">
+    <h3><a href="https://MingchaoShi.github.io">ichaochao&#39;s Blog</a></h3>
+  </div>
+  <div class="collapsible">
+    <input id="collapsible1" type="checkbox" name="collapsible1">
+    <button>
+      <label for="collapsible1">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </label>
+    </button>
+    <div class="collapsible-body">
+      <ul class="inline">
+        
+          <li>
+            
+              <a href="/" class="menu">
+                首页
+              </a>
+            
+          </li>
+        
+          <li>
+            
+              <a href="/archives" class="menu">
+                归档
+              </a>
+            
+          </li>
+        
+          <li>
+            
+              <a href="/tags" class="menu">
+                标签
+              </a>
+            
+          </li>
+        
+          <li>
+            
+              <a href="/post/about" class="menu">
+                关于
+              </a>
+            
+          </li>
+        
+      </ul>
     </div>
   </div>
-</div>
+</nav>
 
-<transition name="fade">
-  <div class="menu-container" style="display: none;" v-show="menuVisible">
-    <div class="menu-list">
-      
-        
-          <a href="/" class="menu purple-link">
-            首页
-          </a>
-        
-      
-        
-          <a href="/archives" class="menu purple-link">
-            归档
-          </a>
-        
-      
-        
-          <a href="/tags" class="menu purple-link">
-            标签
-          </a>
-        
-      
-        
-          <a href="/post/about" class="menu purple-link">
-            关于
-          </a>
-        
-      
-    </div>
-  </div>
-</transition>
-
-
-      <div class="content-container">
-        <div class="post-detail">
-          <h2 class="post-title">Hello Hve Notes</h2>
-          <div class="post-info post-detail-info">
-            <span><i class="icon-calendar-outline"></i> 2018-12-12</span>
+    <div id="top" class="row site">
+      <div class="sm-12 md-8 col">
+        <div class="paper">
+          <article class="article">
+            <h1>Hello Hve Notes</h1>
+            <p class="article-meta">
+              2018-12-12
+              
+                <a href="https://MingchaoShi.github.io/tag/hvenotes" class="badge ">
+                  HveNotes
+                </a>
+              
+            </p>
             
-              <span>
-                <i class="icon-pricetags-outline"></i>
-                
-                  <a href="https://MingchaoShi.github.io/tag/hvenotes">
-                    HveNotes
-                    
-                  </a>
-                
-              </span>
+              <img src="https://MingchaoShi.github.io/post-images/hello-hve-notes.png" alt="Hello Hve Notes">
             
-          </div>
-          <div class="post-content">
-            <p>👏  欢迎使用 <strong>Hve Notes</strong> ！  </p>
-<p>Github: <a href="https://github.com/hve-notes/hve-notes">Hve Notes</a><br>项目主页: <a href="http://hvenotes.fehey.com/">Hve Notes</a><br>示例网站: <a href="http://fehey.com/">示例网站一</a> <a href="http://hve-notes.github.io">示例网站二</a>  </p>
-<p>✍️  <strong>Hve Notes</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ... </p>
-<h2 id="特性👇">特性👇</h2><p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作  </p>
-<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片  </p>
-<p>🏷️  你可以对文章进行标签分组  </p>
-<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单  </p>
-<p>💻  你可以在 <strong>𝖶𝗂𝗇𝖽𝗈𝗐𝗌</strong> 或 <strong>𝖬𝖺𝖼𝖮𝖲</strong> 设备上使用此客户端  </p>
-<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台  </p>
-<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统  </p>
-<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong>  </p>
-<p>🌁  你可以任意使用应用内默认主题或任意第三方主题  </p>
+            <div class="post-content">
+              <p>👏  欢迎使用 <strong>Hve Notes</strong> ！</p>
+<p>Github: <a href="https://github.com/hve-notes/hve-notes">Hve Notes</a><br>
+项目主页: <a href="http://hvenotes.fehey.com/">Hve Notes</a><br>
+示例网站: <a href="http://fehey.com/">示例网站一</a> <a href="http://hve-notes.github.io">示例网站二</a></p>
+<p>✍️  <strong>Hve Notes</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+<h2 id="特性">特性👇</h2>
+<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
+<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
+<p>🏷️  你可以对文章进行标签分组</p>
+<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
+<p>💻  你可以在 <strong>𝖶𝗂𝗇𝖽𝗈𝗐𝗌</strong> 或 <strong>𝖬𝖺𝖼𝖮𝖲</strong> 设备上使用此客户端</p>
+<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
+<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
+<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
+<p>🌁  你可以任意使用应用内默认主题或任意第三方主题</p>
 <p>🌱 当然 <strong>Hve Notes</strong> 还很年轻，有很多不足，但请相信，它会不停向前🏃</p>
 <p>未来，它一定会成为你离不开的伙伴</p>
 <p>尽情发挥你的才华吧！</p>
 <p>😘 Enjoy~</p>
 
-          </div>
+            </div>
+          </article>
         </div>
-
+        <div class="paper" data-aos="fade-in">
+          
+        </div>
         
       </div>
 
+      <div class="sm-12 md-4 col sidebar">
+  <div class="paper info-container">
+    <img src="https://MingchaoShi.github.io/images/avatar.png?v=1556184724106" class="no-responsive avatar">
+    <div class="text-muted">用进废退</div>
+    <div class="social-container">
       
-
-      <div class="site-footer">
-  <div class="slogan">用进废退</div>
-  Powered by Hve Notes
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+  </div>
+  <div class="paper">
+    <div class="sidebar-title">
+      最新文章
+    </div>
+    <div class="row">
+      <ul>
+        
+          
+            <li>
+              <a href="https://MingchaoShi.github.io/post/Readingnotes_How-to-think-straight-about-psychology">读书笔记 - 这才是心理学</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://MingchaoShi.github.io/post/Readingnotes_simplyinvest">读书笔记 - 投资中最简单的事</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://MingchaoShi.github.io/post/Auto_Backup">电脑文件的本地及云端自动备份</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://MingchaoShi.github.io/post/blog-rebirth">Blog rebirth</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://MingchaoShi.github.io/post/about">关于</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://MingchaoShi.github.io/post/hello-hve-notes">Hello Hve Notes</a>
+            </li>
+          
+        
+      </ul>
+    </div>
+  </div>
+  <div class="paper">
+    <div class="sidebar-title">
+      标签列表
+    </div>
+    <div class="row">
+      
+        <a href="https://MingchaoShi.github.io/tag/ReadingNotes" class="badge ">
+          ReadingNotes
+        </a>
+      
+        <a href="https://MingchaoShi.github.io/tag/hvenotes" class="badge success">
+          HveNotes
+        </a>
+      
+    </div>
+  </div>
+  <div class="paper">
+    Powered by Hve Notes
+  </div>
 </div>
 
 
     </div>
-    <script type="application/javascript">
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
 
 hljs.initHighlightingOnLoad()
-
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
 
 </script>
 

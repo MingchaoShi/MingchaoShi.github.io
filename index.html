@@ -1,242 +1,294 @@
-
+<!DOCTYPE html>
 <html>
   <head>
-    
-<meta charset="utf-8" >
+    <meta charset="utf-8" >
 
 <title>ichaochao&#39;s Blog</title>
 <meta name="description" content="用进废退">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+<link rel="shortcut icon" href="https://MingchaoShi.github.io/favicon.ico?v=1556184724106">
 
-<link rel="shortcut icon" href="https://MingchaoShi.github.io/favicon.ico">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
 <link rel="stylesheet" href="https://MingchaoShi.github.io/styles/main.css">
 
 
-
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
   </head>
   <body>
-    <div id="app" class="main">
-      <div class="site-header-container">
-  <div class="site-header">
-    <div class="left">
-      <a href="https://MingchaoShi.github.io">
-        <img class="avatar" src="https://MingchaoShi.github.io/images/avatar.png" alt="" width="32px" height="32px">
-      </a>
-      <a href="https://MingchaoShi.github.io">
-        <h1 class="site-title">ichaochao&#39;s Blog</h1>
-      </a>
-    </div>
-    <div class="right">
-      <transition name="fade">
-        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
-      </transition>
+    <nav class="navbar border fixed split-nav">
+  <div class="nav-brand">
+    <h3><a href="https://MingchaoShi.github.io">ichaochao&#39;s Blog</a></h3>
+  </div>
+  <div class="collapsible">
+    <input id="collapsible1" type="checkbox" name="collapsible1">
+    <button>
+      <label for="collapsible1">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </label>
+    </button>
+    <div class="collapsible-body">
+      <ul class="inline">
+        
+          <li>
+            
+              <a href="/" class="menu">
+                首页
+              </a>
+            
+          </li>
+        
+          <li>
+            
+              <a href="/archives" class="menu">
+                归档
+              </a>
+            
+          </li>
+        
+          <li>
+            
+              <a href="/tags" class="menu">
+                标签
+              </a>
+            
+          </li>
+        
+          <li>
+            
+              <a href="/post/about" class="menu">
+                关于
+              </a>
+            
+          </li>
+        
+      </ul>
     </div>
   </div>
-</div>
+</nav>
 
-<transition name="fade">
-  <div class="menu-container" style="display: none;" v-show="menuVisible">
-    <div class="menu-list">
+
+    <div id="top" class="row site">
+      <div class="sm-12 md-8 col">
+        <div class="paper">
+          
+  <article class="article">
+    <h2 class="article-title">
+      <a href="https://MingchaoShi.github.io/post/Readingnotes_How-to-think-straight-about-psychology">读书笔记 - 这才是心理学</a>
+    </h2>
+    <p class="article-meta">
+      2019-04-25
       
-        
-          <a href="/" class="menu purple-link">
-            首页
-          </a>
-        
+        <a href="https://MingchaoShi.github.io/tag/ReadingNotes" class="badge secondary">
+          ReadingNotes
+        </a>
       
-        
-          <a href="/archives" class="menu purple-link">
-            归档
-          </a>
-        
+    </p>
+    <p class="text-lead">
       
-        
-          <a href="/tags" class="menu purple-link">
-            标签
-          </a>
-        
+    </p>
+    <div class="row">
+      <a href="https://MingchaoShi.github.io/post/Readingnotes_How-to-think-straight-about-psychology" class="readmore-link">
+        <button>
+          Read More
+        </button>
+      </a>
+    </div>
+  </article>
+
+  <article class="article">
+    <h2 class="article-title">
+      <a href="https://MingchaoShi.github.io/post/Readingnotes_simplyinvest">读书笔记 - 投资中最简单的事</a>
+    </h2>
+    <p class="article-meta">
+      2019-04-04
       
-        
-          <a href="/post/about" class="menu purple-link">
-            关于
-          </a>
-        
+        <a href="https://MingchaoShi.github.io/tag/ReadingNotes" class="badge success">
+          ReadingNotes
+        </a>
       
-    </div>
-  </div>
-</transition>
-
-
-      <div class="content-container">
-        
-        
-<section class="post-item">
-    <div class="content">
-      <a href="https://MingchaoShi.github.io/post/Readingnotes_How-to-think-straight-about-psychology">
-        <h2 class="post-title">读书笔记 - 这才是心理学</h2>
+    </p>
+    <p class="text-lead">
+      
+    </p>
+    <div class="row">
+      <a href="https://MingchaoShi.github.io/post/Readingnotes_simplyinvest" class="readmore-link">
+        <button>
+          Read More
+        </button>
       </a>
-      <div class="post-abstract">
-        
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2019-04-25</span>
-        
-          <span>
-            <i class="icon icon-pricetags-outline"></i>
-            
-              <a href="https://MingchaoShi.github.io/tag/ReadingNotes">
-                ReadingNotes
-                
-              </a>
-            
-          </span>
-        
-      </div>
     </div>
-    
-      <a href="https://MingchaoShi.github.io/post/Readingnotes_How-to-think-straight-about-psychology">
-        <div class="feature-container" style="background-image: url('https://MingchaoShi.github.io/post-images/Readingnotes_How-to-think-straight-about-psychology.png')">
+  </article>
+
+  <article class="article">
+    <h2 class="article-title">
+      <a href="https://MingchaoShi.github.io/post/Auto_Backup">电脑文件的本地及云端自动备份</a>
+    </h2>
+    <p class="article-meta">
+      2019-02-21
+      
+    </p>
+    <p class="text-lead">
+      
+    </p>
+    <div class="row">
+      <a href="https://MingchaoShi.github.io/post/Auto_Backup" class="readmore-link">
+        <button>
+          Read More
+        </button>
+      </a>
+    </div>
+  </article>
+
+  <article class="article">
+    <h2 class="article-title">
+      <a href="https://MingchaoShi.github.io/post/blog-rebirth">Blog rebirth</a>
+    </h2>
+    <p class="article-meta">
+      2019-02-16
+      
+    </p>
+    <p class="text-lead">
+      
+    </p>
+    <div class="row">
+      <a href="https://MingchaoShi.github.io/post/blog-rebirth" class="readmore-link">
+        <button>
+          Read More
+        </button>
+      </a>
+    </div>
+  </article>
+
+  <article class="article">
+    <h2 class="article-title">
+      <a href="https://MingchaoShi.github.io/post/hello-hve-notes">Hello Hve Notes</a>
+    </h2>
+    <p class="article-meta">
+      2018-12-12
+      
+        <a href="https://MingchaoShi.github.io/tag/hvenotes" class="badge secondary">
+          HveNotes
+        </a>
+      
+    </p>
+    <p class="text-lead">
+      
+    </p>
+    <div class="row">
+      <a href="https://MingchaoShi.github.io/post/hello-hve-notes" class="readmore-link">
+        <button>
+          Read More
+        </button>
+      </a>
+    </div>
+  </article>
+
+
         </div>
-      </a>
-    
-  </section>
-
-<section class="post-item">
-    <div class="content">
-      <a href="https://MingchaoShi.github.io/post/Readingnotes_simplyinvest">
-        <h2 class="post-title">读书笔记 - 投资中最简单的事</h2>
-      </a>
-      <div class="post-abstract">
         
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2019-04-04</span>
-        
-          <span>
-            <i class="icon icon-pricetags-outline"></i>
-            
-              <a href="https://MingchaoShi.github.io/tag/ReadingNotes">
-                ReadingNotes
-                
-              </a>
-            
-          </span>
-        
-      </div>
-    </div>
-    
-      <a href="https://MingchaoShi.github.io/post/Readingnotes_simplyinvest">
-        <div class="feature-container" style="background-image: url('https://MingchaoShi.github.io/post-images/Readingnotes_simplyinvest.jpeg')">
-        </div>
-      </a>
-    
-  </section>
-
-<section class="post-item">
-    <div class="content">
-      <a href="https://MingchaoShi.github.io/post/Auto_Backup">
-        <h2 class="post-title">电脑文件的本地及云端自动备份</h2>
-      </a>
-      <div class="post-abstract">
-        
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2019-02-21</span>
-        
-      </div>
-    </div>
-    
-      <a href="https://MingchaoShi.github.io/post/Auto_Backup">
-        <div class="feature-container" style="background-image: url('https://MingchaoShi.github.io/post-images/Auto_Backup.jpg')">
-        </div>
-      </a>
-    
-  </section>
-
-<section class="post-item">
-    <div class="content">
-      <a href="https://MingchaoShi.github.io/post/blog-rebirth">
-        <h2 class="post-title">Blog rebirth</h2>
-      </a>
-      <div class="post-abstract">
-        
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2019-02-16</span>
-        
-      </div>
-    </div>
-    
-      <a href="https://MingchaoShi.github.io/post/blog-rebirth">
-        <div class="feature-container" style="background-image: url('https://MingchaoShi.github.io/post-images/blog-rebirth.jpeg')">
-        </div>
-      </a>
-    
-  </section>
-
-<section class="post-item">
-    <div class="content">
-      <a href="https://MingchaoShi.github.io/post/hello-hve-notes">
-        <h2 class="post-title">Hello Hve Notes</h2>
-      </a>
-      <div class="post-abstract">
-        
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2018-12-12</span>
-        
-          <span>
-            <i class="icon icon-pricetags-outline"></i>
-            
-              <a href="https://MingchaoShi.github.io/tag/hvenotes">
-                HveNotes
-                
-              </a>
-            
-          </span>
-        
-      </div>
-    </div>
-    
-      <a href="https://MingchaoShi.github.io/post/hello-hve-notes">
-        <div class="feature-container" style="background-image: url('https://MingchaoShi.github.io/post-images/hello-hve-notes.png')">
-        </div>
-      </a>
-    
-  </section>
-
-
-<div class="pagination-container">
+        <div class="row flex-edges">
   
   
 </div>
 
-
       </div>
-
-      <div class="site-footer">
-  <div class="slogan">用进废退</div>
-  Powered by Hve Notes
+      
+      <div class="sm-12 md-4 col sidebar">
+  <div class="paper info-container">
+    <img src="https://MingchaoShi.github.io/images/avatar.png?v=1556184724106" class="no-responsive avatar">
+    <div class="text-muted">用进废退</div>
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+  </div>
+  <div class="paper">
+    <div class="sidebar-title">
+      最新文章
+    </div>
+    <div class="row">
+      <ul>
+        
+          
+            <li>
+              <a href="https://MingchaoShi.github.io/post/Readingnotes_How-to-think-straight-about-psychology">读书笔记 - 这才是心理学</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://MingchaoShi.github.io/post/Readingnotes_simplyinvest">读书笔记 - 投资中最简单的事</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://MingchaoShi.github.io/post/Auto_Backup">电脑文件的本地及云端自动备份</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://MingchaoShi.github.io/post/blog-rebirth">Blog rebirth</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://MingchaoShi.github.io/post/hello-hve-notes">Hello Hve Notes</a>
+            </li>
+          
+        
+      </ul>
+    </div>
+  </div>
+  <div class="paper">
+    <div class="sidebar-title">
+      标签列表
+    </div>
+    <div class="row">
+      
+        <a href="https://MingchaoShi.github.io/tag/ReadingNotes" class="badge secondary">
+          ReadingNotes
+        </a>
+      
+        <a href="https://MingchaoShi.github.io/tag/hvenotes" class="badge secondary">
+          HveNotes
+        </a>
+      
+    </div>
+  </div>
+  <div class="paper">
+    Powered by Hve Notes
+  </div>
 </div>
 
-
     </div>
-    <script type="application/javascript">
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
 
 hljs.initHighlightingOnLoad()
-
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
 
 </script>
 
