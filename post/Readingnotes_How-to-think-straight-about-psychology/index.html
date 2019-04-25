@@ -1,99 +1,98 @@
+
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" >
+    
+<meta charset="utf-8" >
 
 <title>读书笔记 - 这才是心理学 | ichaochao&#39;s Blog</title>
 <meta name="description" content="用进废退">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="shortcut icon" href="https://MingchaoShi.github.io/favicon.ico?v=1556184724106">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
+<link rel="shortcut icon" href="https://MingchaoShi.github.io/favicon.ico">
 <link rel="stylesheet" href="https://MingchaoShi.github.io/styles/main.css">
 
 
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-
-
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
   </head>
   <body>
-  
-    <nav class="navbar border fixed split-nav">
-  <div class="nav-brand">
-    <h3><a href="https://MingchaoShi.github.io">ichaochao&#39;s Blog</a></h3>
-  </div>
-  <div class="collapsible">
-    <input id="collapsible1" type="checkbox" name="collapsible1">
-    <button>
-      <label for="collapsible1">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </label>
-    </button>
-    <div class="collapsible-body">
-      <ul class="inline">
-        
-          <li>
-            
-              <a href="/" class="menu">
-                首页
-              </a>
-            
-          </li>
-        
-          <li>
-            
-              <a href="/archives" class="menu">
-                归档
-              </a>
-            
-          </li>
-        
-          <li>
-            
-              <a href="/tags" class="menu">
-                标签
-              </a>
-            
-          </li>
-        
-          <li>
-            
-              <a href="/post/about" class="menu">
-                关于
-              </a>
-            
-          </li>
-        
-      </ul>
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://MingchaoShi.github.io">
+        <img class="avatar" src="https://MingchaoShi.github.io/images/avatar.png" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://MingchaoShi.github.io">
+        <h1 class="site-title">ichaochao&#39;s Blog</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
     </div>
   </div>
-</nav>
+</div>
 
-    <div id="top" class="row site">
-      <div class="sm-12 md-8 col">
-        <div class="paper">
-          <article class="article">
-            <h1>读书笔记 - 这才是心理学</h1>
-            <p class="article-meta">
-              2019-04-25
-              
-                <a href="https://MingchaoShi.github.io/tag/ReadingNotes" class="badge warning">
-                  ReadingNotes
-                </a>
-              
-            </p>
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+        
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="menu purple-link">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="menu purple-link">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+      <div class="content-container">
+        <div class="post-detail">
+          <h2 class="post-title">读书笔记 - 这才是心理学</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2019-04-25</span>
             
-              <img src="https://MingchaoShi.github.io/post-images/Readingnotes_How-to-think-straight-about-psychology.png" alt="读书笔记 - 这才是心理学">
+              <span>
+                <i class="icon-pricetags-outline"></i>
+                
+                  <a href="https://MingchaoShi.github.io/tag/ReadingNotes">
+                    ReadingNotes
+                    
+                  </a>
+                
+              </span>
             
-            <div class="post-content">
-              <p><img src="https://MingchaoShi.github.io/post-images/1556182967688.png" alt="">
+          </div>
+          <div class="post-content">
+            <p><img src="https://MingchaoShi.github.io/post-images/1556182967688.png" alt="">
 作者：（加）基思·斯坦诺维奇</p>
 <p>出版社：中国人民大学出版社</p>
 <p>出版日期：2015-8-1</p>
@@ -164,121 +163,39 @@
 <p>现在看来，这就像是一个玩弄众人于股掌之上的可怕骗局。实际也是如此。而当那些“受人尊敬”的财经杂志或电视节目给你推荐“连续四年击败一半以上对手的股票经纪人”时，情况也好不到哪儿去。请回想一下猴子掷飞镖的场景，设想这些猴子是年年选股的股票经纪人。很明显，第一年他们之中有50%会击败他们的对手；第二年，这50%的人中又有一半——按随机水平来说——会击败其对手，即25%的经纪人能连续两年击败他们的对手。之后，第三年又有一半——随机水平——能击败对手，即总人数的12.5%连续三年击败对手。最终，到第四年，又会有这些人的一半（总人数的6.25%）能击败自己的对手。因此，100只猴子中大概有6只能取得像财经节目和报纸所说的“连续四年击败了其他的经纪人”骄人成绩的猴子。那么，这6只击败了一起掷飞镖的同伴的猴子（正如你所见，也击败了大多数现实生活中的华尔街经纪人）的确有资格在电视节目“华尔街一周”中亮相，你觉得呢？</p>
 <p>试图去解释偶然事件的倾向可能源于我们深切地渴望相信自己是可以控制这些事件的。心理学家已经对所谓“控制错觉”（illusion of control）现象进行了研究，这一现象指的是人们有一种倾向，愿意相信个人能力可以影响偶然事件的结果（Matute, Yarritu, &amp; Vadillo, 2011）。这一错觉广泛存在的证据来自于美国各州彩票发行的经验。这些州充斥着教人们如何“征服”彩票的伪科学书籍。这类书之所以畅销，是因为人们不懂得随机性的含义。</p>
 
-            </div>
-          </article>
+          </div>
         </div>
-        <div class="paper" data-aos="fade-in">
-          
-            <div class="next-post">
-              <div class="next">
-                下一篇
-              </div>
-              <a href="https://MingchaoShi.github.io/post/Readingnotes_simplyinvest">
-                <h3 class="post-title">
-                  读书笔记 - 投资中最简单的事
-                </h3>
-              </a>
-            </div>
-          
-        </div>
+
         
+          <div class="next-post">
+            <a class="purple-link" href="https://MingchaoShi.github.io/post/Readingnotes_simplyinvest">
+              <h3 class="post-title">
+                下一篇：读书笔记 - 投资中最简单的事
+              </h3>
+            </a>
+          </div>
+          
       </div>
 
-      <div class="sm-12 md-4 col sidebar">
-  <div class="paper info-container">
-    <img src="https://MingchaoShi.github.io/images/avatar.png?v=1556184724106" class="no-responsive avatar">
-    <div class="text-muted">用进废退</div>
-    <div class="social-container">
       
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-  </div>
-  <div class="paper">
-    <div class="sidebar-title">
-      最新文章
-    </div>
-    <div class="row">
-      <ul>
-        
-          
-            <li>
-              <a href="https://MingchaoShi.github.io/post/Readingnotes_How-to-think-straight-about-psychology">读书笔记 - 这才是心理学</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://MingchaoShi.github.io/post/Readingnotes_simplyinvest">读书笔记 - 投资中最简单的事</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://MingchaoShi.github.io/post/Auto_Backup">电脑文件的本地及云端自动备份</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://MingchaoShi.github.io/post/blog-rebirth">Blog rebirth</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://MingchaoShi.github.io/post/about">关于</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://MingchaoShi.github.io/post/hello-hve-notes">Hello Hve Notes</a>
-            </li>
-          
-        
-      </ul>
-    </div>
-  </div>
-  <div class="paper">
-    <div class="sidebar-title">
-      标签列表
-    </div>
-    <div class="row">
-      
-        <a href="https://MingchaoShi.github.io/tag/ReadingNotes" class="badge warning">
-          ReadingNotes
-        </a>
-      
-        <a href="https://MingchaoShi.github.io/tag/hvenotes" class="badge success">
-          HveNotes
-        </a>
-      
-    </div>
-  </div>
-  <div class="paper">
-    Powered by Hve Notes
-  </div>
+
+      <div class="site-footer">
+  <div class="slogan">用进废退</div>
+  Powered by Hve Notes
 </div>
 
 
     </div>
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
-<script type="application/javascript">
-
-AOS.init();
+    <script type="application/javascript">
 
 hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
 
 </script>
 
