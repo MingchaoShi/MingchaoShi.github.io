@@ -1,15 +1,12 @@
-
 <!DOCTYPE html>
 <html>
   <head>
-    
-<meta charset="utf-8" >
+    <meta charset="utf-8" >
 
 <title>读书笔记 - 投资中最简单的事 | ichaochao&#39;s Blog</title>
 <meta name="description" content="用进废退">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 <link rel="shortcut icon" href="https://MingchaoShi.github.io/favicon.ico">
 <link rel="stylesheet" href="https://MingchaoShi.github.io/styles/main.css">
@@ -19,80 +16,74 @@
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 
   </head>
   <body>
     <div id="app" class="main">
-      <div class="site-header-container">
-  <div class="site-header">
-    <div class="left">
-      <a href="https://MingchaoShi.github.io">
-        <img class="avatar" src="https://MingchaoShi.github.io/images/avatar.png" alt="" width="32px" height="32px">
-      </a>
-      <a href="https://MingchaoShi.github.io">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://MingchaoShi.github.io">
+        <img src="https://MingchaoShi.github.io/images/avatar.png" class="site-logo">
         <h1 class="site-title">ichaochao&#39;s Blog</h1>
       </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
     </div>
-    <div class="right">
-      <transition name="fade">
-        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
-      </transition>
-    </div>
-  </div>
-</div>
-
-<transition name="fade">
-  <div class="menu-container" style="display: none;" v-show="menuVisible">
-    <div class="menu-list">
+    <div>
       
         
-          <a href="/" class="menu purple-link">
+          <a href="/" class="site-nav">
             首页
           </a>
         
       
         
-          <a href="/archives" class="menu purple-link">
+          <a href="/archives" class="site-nav">
             归档
           </a>
         
       
         
-          <a href="/tags" class="menu purple-link">
+          <a href="/tags" class="site-nav">
             标签
           </a>
         
       
         
-          <a href="/post/about" class="menu purple-link">
+          <a href="/post/about" class="site-nav">
             关于
           </a>
         
       
     </div>
   </div>
-</transition>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="site-description">
+      用进废退
+    </div>
+    <div class="site-footer">
+      Powered by Hve Notes
+    </div>
+  </div>
+</div>
 
 
-      <div class="content-container">
-        <div class="post-detail">
-          <h2 class="post-title">读书笔记 - 投资中最简单的事</h2>
-          <div class="post-info post-detail-info">
-            <span><i class="icon-calendar-outline"></i> 2019-04-04</span>
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">读书笔记 - 投资中最简单的事</h2>
+            <div class="post-date">2019-04-04</div>
             
-              <span>
-                <i class="icon-pricetags-outline"></i>
-                
-                  <a href="https://MingchaoShi.github.io/tag/ReadingNotes">
-                    ReadingNotes
-                    
-                  </a>
-                
-              </span>
+              <div class="feature-container" style="background-image: url('https://MingchaoShi.github.io/post-images/Readingnotes_simplyinvest.jpeg')">
+              </div>
             
-          </div>
-          <div class="post-content">
-            <p><em><strong>好公司的两个标准</strong></em>
+            <div class="post-content">
+              <p><em><strong>好公司的两个标准</strong></em>
 一是它做的事情别人做不了；二是它做的事情自己可以重复做。前者是门槛，决定利润率的高低和趋势；后者是成长的可复制性，决定销售增速。如果二者不可兼得，宁要有门槛的低增长（可持续），也不要没门槛的高增长（不可持续）。门槛是现有的，好把握；成长是将来的，难预测。</p>
 <p><em><strong>寡头的力量</strong></em>
 回顾过去5年，寡头垄断行业的利润增长往往不断超出预期，而市场集中度低的行业则常常陷于恶性竞争和价格战的泥潭之中。白色家电（空调、冰箱和洗衣机）和黑色家电（电视）两个行业的不同发展历程就是最好的明证。所以，投资制造业时更应关注工程机械、核心汽配、白色家电这样的寡头行业。分析技术变化快的行业时不必看市场占有率，而要看是否适应最新的杀手级应用的潮流。</p>
@@ -153,30 +144,40 @@
 <p>11.羊群效应
 羊群效应原是由生物学家在研究动物时发现的。现实生活中，基金经理抱团取暖，散户跟风炒作，非典时抢醋，地震后抢盐，羊群效应无处不在。不管是集体看空还是集体看多，最一致的时候往往是最危险的时候。只有卓尔不群的人才能在高处有如临深渊的谨慎，在低谷有仰望星空的勇气。</p>
 
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://MingchaoShi.github.io/tag/ReadingNotes" class="tag">
+                    ReadingNotes
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://MingchaoShi.github.io/post/Auto_Backup">
+                  <h3 class="post-title">
+                    电脑文件的本地及云端自动备份
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
           </div>
+
         </div>
-
-        
-          <div class="next-post">
-            <a class="purple-link" href="https://MingchaoShi.github.io/post/Auto_Backup">
-              <h3 class="post-title">
-                下一篇：电脑文件的本地及云端自动备份
-              </h3>
-            </a>
-          </div>
-          
       </div>
-
-      
-
-      <div class="site-footer">
-  <div class="slogan">用进废退</div>
-  Powered by Hve Notes
-</div>
-
-
     </div>
-    <script type="application/javascript">
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
 
 hljs.initHighlightingOnLoad()
 
