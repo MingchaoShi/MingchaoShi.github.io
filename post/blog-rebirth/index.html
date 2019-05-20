@@ -12,6 +12,12 @@
 <link rel="stylesheet" href="https://MingchaoShi.github.io/styles/main.css">
 
 
+  
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/disqusjs@1.1/dist/disqusjs.css" />
+  
+
 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
@@ -104,6 +110,12 @@
             
 
             
+              
+
+              
+                <div id="disqus_thread" data-aos="fade-in"></div>
+              
+            
 
           </div>
 
@@ -127,6 +139,26 @@ var app = new Vue({
 })
 
 </script>
+
+
+  
+  
+
+  
+    <script src="https://unpkg.com/disqusjs@1.1/dist/disqus.js"></script>
+    <script>
+
+    var options = {
+      shortname: '',
+      apikey: '',
+    }
+    if ('') {
+      options.api = ''
+    }
+    var dsqjs = new DisqusJS(options)
+
+    </script>
+  
 
 
 
